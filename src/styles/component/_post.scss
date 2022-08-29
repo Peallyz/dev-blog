@@ -1,0 +1,104 @@
+.post {
+    width: 50%;
+    height: auto;
+    border: 2px solid $gray;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 20px;
+    color: $gray;
+    margin: 20px auto 0;
+    position: relative;
+    @media screen and (max-width: 700px) {
+        width: 90%;
+    }
+    &__link {
+        font-size: 0.8rem;
+        word-break: break-all;
+        text-decoration: underline;
+        &:hover {
+            color: lighten($orange, 10%);
+        }
+        &:active {
+            color: $orange;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        i {
+            font-size: 15px;
+            color: $gray;
+        }
+        button {
+            margin-left: 10px;
+        }
+    }
+    .modifierBtn {
+        display: block;
+        margin: 10px 0 10px auto;
+    }
+    textarea {
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        padding: 5px;
+        font-family: "Nunito", Arial, Helvetica, sans-serif;
+    }
+    h3 {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        text-decoration: underline;
+        font-weight: 800;
+    }
+    &__message {
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    &__footer {
+        margin-top: 15px;
+        display: flex;
+        font-size: 0.9rem;
+        justify-content: space-between;
+        color: darken($gray, 10%);
+    }
+    &__comment {
+        margin-top: 15px;
+        .commentaires {
+            h4 {
+                font-size: 1rem;
+            }
+        }
+        &--box {
+            margin-top: 15px;
+            display: flex;
+            textarea {
+                background-color: $gray;
+            }
+            button {
+                padding: 8px 10px;
+                margin: auto 8px;
+                height: 100%;
+            }
+        }
+    }
+    .comment__container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        background: darken($black, 2%);
+        margin: 5px 0;
+        border-radius: 5px;
+
+        &--title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            h5 {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

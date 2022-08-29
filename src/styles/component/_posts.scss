@@ -1,0 +1,9 @@
+.posts,
+.bookmark {
+    .zeroPost {
+        text-align: center;
+        margin-top: 50px;
+        color: $gray;
+        font-size: calc(1vw + 0.5rem);
+    }
+}

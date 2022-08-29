@@ -1,0 +1,95 @@
+nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 10px;
+    left: -5px;
+    z-index: 3;
+    .menu {
+        @media screen and (min-width: 800px) {
+            display: none;
+        }
+        z-index: 3;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+    @media screen and (max-width: 800px) {
+        width: 60%;
+        left: 0px;
+        top: 0;
+        justify-content: flex-start;
+        i {
+            &.fa-bars {
+                font-size: calc(1vh + 15px);
+                color: $gray;
+            }
+        }
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        justify-content: space-around;
+        background: radial-gradient(#001220, lighten(#001220, 10%));
+        border-radius: 5px;
+        border: 2px solid $gray;
+        height: auto;
+        padding: 10px;
+        transition: all 0.2s ease-in-out;
+        @media screen and (max-width: 800px) {
+            &.active {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            &.disabled {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            z-index: 2;
+            border-radius: 0;
+            border: 0;
+            border-right: 2px solid $gray;
+            justify-content: flex-start;
+        }
+        li {
+            font-size: calc(0.5vw + 0.5rem);
+            list-style-type: none;
+            font-weight: 600;
+            color: $gray;
+            @media screen and (max-width: 800px) {
+                height: 20px;
+                font-size: 2rem;
+                margin-top: 30px;
+            }
+
+            button {
+                background: none;
+                font-size: calc(0.5vw + 0.5rem);
+                font-weight: 600;
+                color: $gray;
+                @media screen and (max-width: 800px) {
+                    height: 20px;
+                    font-size: 2rem;
+                }
+            }
+            a {
+                position: relative;
+                &.active::before {
+                    content: "";
+                    height: 100%;
+                    width: 2px;
+                    background-color: $gray;
+                    position: absolute;
+                    right: -20px;
+                }
+                &.active {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}

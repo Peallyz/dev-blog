@@ -1,0 +1,19 @@
+.title {
+    display: flex;
+    justify-content: center;
+    h3 {
+        text-align: center;
+        font-size: 2rem;
+        color: $gray;
+    }
+    button {
+        background: $gray;
+        padding: 5px;
+        border-radius: 99px;
+        margin-left: 20px;
+        i {
+            font-size: 2rem;
+            color: $black;
+        }
+    }
+}

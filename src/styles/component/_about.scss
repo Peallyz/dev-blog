@@ -1,0 +1,20 @@
+.about {
+    margin-top: 50px;
+    h3,
+    p {
+        color: $gray;
+        width: 95%;
+        margin: 15px auto;
+    }
+    h3 {
+        font-size: calc(1vw + 1rem);
+        font-weight: 800;
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: calc(0.5vw + 0.5rem);
+        &:nth-child(8) {
+            margin-top: 50px;
+        }
+    }
+}
