@@ -21,16 +21,16 @@ const NavBar = () => {
             </button>
             <ul className={navOpened ? "active" : "disabled"}>
                 <li>
-                    <NavLink to="/">Feed</NavLink>
+                    <NavLink to="/dev-blog">Feed</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/about">A propos</NavLink>
+                    <NavLink to="/dev-blog/about">A propos</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/posts">Mes posts</NavLink>
+                    <NavLink to="/dev-blog/posts">Mes posts</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/bookmark">Favories</NavLink>
+                    <NavLink to="/dev-blog/bookmark">Favories</NavLink>
                 </li>
                 <li>
                     <button

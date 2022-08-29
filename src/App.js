@@ -45,10 +45,13 @@ function App() {
                 <Routes>
                     {uid && (
                         <>
-                            <Route path="/" element={<Feed />} />
-                            <Route path="/about" element={<About />} />
-                            <Route path="/posts" element={<Posts />} />
-                            <Route path="/bookmark" element={<Bookmark />} />
+                            <Route path="/dev-blog/" element={<Feed />} />
+                            <Route path="/dev-blog/about" element={<About />} />
+                            <Route path="/dev-blog/posts" element={<Posts />} />
+                            <Route
+                                path="/dev-blog/bookmark"
+                                element={<Bookmark />}
+                            />
                         </>
                     )}
                 </Routes>
