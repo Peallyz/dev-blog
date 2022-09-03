@@ -13,7 +13,14 @@ const Posts = () => {
                 ? [...posts]
                       .filter((post) => post.authorId === uid)
                       .sort((a, b) => b.date - a.date)
-                      .map((post, index) => <Post post={post} key={index} />)
+                      .map((post, index) => (
+                          <Post
+                              post={post}
+                              key={Math.floor(
+                                  Math.random() * (Math.random() * 999999999)
+                              )}
+                          />
+                      ))
                 : uid && (
                       <h3 className="zeroPost">
                           Vous n'avez pas encore poster sur ce site.

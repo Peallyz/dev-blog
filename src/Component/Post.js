@@ -12,6 +12,7 @@ const Post = ({ post }) => {
     const [isAuthor, setIsAuthor] = useState();
     const [isEditing, setIsEditing] = useState(false);
     const [editMess, setEditMess] = useState(null);
+    console.log(post);
 
     const uid = useSelector((state) => state.user.uid);
 
@@ -36,7 +37,7 @@ const Post = ({ post }) => {
         <div className="post">
             <div className="post__btn">
                 <Bookmarked post={post} />
-                {isAuthor && (
+                {isAuthor && uid === post.authorId && (
                     <>
                         <button
                             onClick={() =>
