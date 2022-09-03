@@ -63,7 +63,7 @@ const SignUp = () => {
                     required
                     ref={confirmedPassword}
                 />
-                <span>
+                <span onClick={(e) => handleRegister(e)}>
                     <input
                         className="loginBtn"
                         type="submit"

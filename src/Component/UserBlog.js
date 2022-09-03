@@ -2,6 +2,7 @@ import { signOut } from "firebase/auth";
 import React from "react";
 import { auth } from "../utils/firebase.config";
 import { useSelector } from "react-redux";
+import { NavLink } from "react-router-dom";
 
 const UserBlog = () => {
     const displayName = useSelector((state) => state.user.displayName);
@@ -13,7 +14,9 @@ const UserBlog = () => {
         <div className="title">
             <h3>Bienvenue {displayName}</h3>
             <button onClick={() => handleLogout()}>
-                <i className="fa-solid fa-right-to-bracket"></i>
+                <NavLink to="/dev-blog">
+                    <i className="fa-solid fa-right-to-bracket"></i>
+                </NavLink>
             </button>
         </div>
     );

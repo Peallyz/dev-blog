@@ -77,17 +77,19 @@ nav {
                 }
             }
             a {
-                position: relative;
-                &.active::before {
-                    content: "";
-                    height: 100%;
-                    width: 2px;
-                    background-color: $gray;
-                    position: absolute;
-                    right: -20px;
-                }
-                &.active {
-                    font-weight: 900;
+                &.pages {
+                    position: relative;
+                    &.active::before {
+                        content: "";
+                        height: 100%;
+                        width: 2px;
+                        background-color: $gray;
+                        position: absolute;
+                        right: -20px;
+                    }
+                    &.active {
+                        font-weight: 900;
+                    }
                 }
             }
         }

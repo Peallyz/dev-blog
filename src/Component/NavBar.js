@@ -24,13 +24,19 @@ const NavBar = () => {
                     <NavLink to="/dev-blog">Feed</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/dev-blog/about">A propos</NavLink>
+                    <NavLink to="/dev-blog/about" className={"pages"}>
+                        A propos
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/dev-blog/posts">Mes posts</NavLink>
+                    <NavLink to="/dev-blog/posts" className={"pages"}>
+                        Mes posts
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/dev-blog/bookmark">Favories</NavLink>
+                    <NavLink to="/dev-blog/bookmark" className={"pages"}>
+                        Favories
+                    </NavLink>
                 </li>
                 <li>
                     <button
@@ -38,7 +44,7 @@ const NavBar = () => {
                             handleLogout();
                         }}
                     >
-                        Déconnexion
+                        <NavLink to="/dev-blog">Deconnexion</NavLink>
                     </button>
                 </li>
             </ul>
